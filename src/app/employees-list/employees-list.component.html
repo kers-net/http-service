@@ -1,0 +1,8 @@
+
+{{greeting}}
+<div *ngFor="let employee of employees" class="list">
+  <app-employee-item
+  [employee]="employee"
+  (showDetails)="showDetails($event)"
+  ></app-employee-item>
+</div>

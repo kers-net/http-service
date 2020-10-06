@@ -1,0 +1,5 @@
+<a [routerLink]="['/details/', employee.id]"> <div class="employee-item" (click)="itemClicked()">
+  <h3>{{employee.first_name}} {{employee.last_name}}</h3>
+  <a href="mailto:{{ employee.email}}">{{employee.email}} </a>
+  </div>
+</a>
